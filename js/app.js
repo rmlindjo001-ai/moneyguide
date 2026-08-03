@@ -11,5 +11,17 @@ window.addEventListener("scroll", function(){
         header.classList.remove("sticky");
 
     }
+    
+
+});
+window.addEventListener("scroll", () => {
+
+    const scrollTop = document.documentElement.scrollTop;
+
+    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+    const progress = (scrollTop / scrollHeight) * 100;
+
+    document.getElementById("readingBar").style.width = progress + "%";
 
 });
