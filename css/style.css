@@ -1213,8 +1213,9 @@ font-weight:600;
 
 transition:.3s;
 
-}
+display:inline-block;
 
+}
 .share-buttons a:hover{
 
 transform:translateY(-3px);
@@ -1247,3 +1248,289 @@ font-weight:700;
 color:#2563eb;
 
 }
+#backTop{
+
+position:fixed;
+
+right:25px;
+
+bottom:25px;
+
+width:50px;
+
+height:50px;
+
+border:none;
+
+border-radius:50%;
+
+background:#2563eb;
+
+color:#fff;
+
+font-size:20px;
+
+cursor:pointer;
+
+display:none;
+
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+transition:.3s;
+
+}
+
+#backTop:hover{
+
+transform:translateY(-5px);
+
+}
+
+/*=========================
+CALCULATOR
+==========================*/
+
+.calculator{
+
+padding:120px 0;
+
+}
+
+.calculator-box{
+
+max-width:700px;
+
+margin:auto;
+
+background:#fff;
+
+padding:40px;
+
+border-radius:20px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.form-group{
+
+margin-bottom:25px;
+
+}
+
+.form-group label{
+
+display:block;
+
+margin-bottom:10px;
+
+font-weight:600;
+
+}
+
+.form-group input{
+
+width:100%;
+
+padding:18px;
+
+border:1px solid #ddd;
+
+border-radius:12px;
+
+font-size:17px;
+
+}
+
+#calculateLoan{
+
+width:100%;
+
+padding:18px;
+
+background:#2563eb;
+
+color:#fff;
+
+border:none;
+
+border-radius:12px;
+
+font-size:17px;
+
+font-weight:700;
+
+cursor:pointer;
+
+}
+
+.result{
+
+margin-top:40px;
+
+text-align:center;
+
+}
+
+.result h3{
+
+margin-bottom:15px;
+
+}
+
+#loanResult{
+
+font-size:42px;
+
+font-weight:700;
+
+color:#2563eb;
+
+}
+/*=========================
+DARK MODE BUTTON
+==========================*/
+
+#themeToggle{
+
+background:none;
+
+border:none;
+
+font-size:22px;
+
+cursor:pointer;
+
+}
+body.dark{
+
+background:#0f172a;
+
+color:#f1f5f9;
+
+}
+
+body.dark section{
+
+background:#0f172a;
+
+}
+
+body.dark .card,
+body.dark .latest-card,
+body.dark .category-card,
+body.dark .calculator-box,
+body.dark .toc{
+
+background:#1e293b;
+
+color:#fff;
+
+}
+/*=========================
+QUOTE BOX
+==========================*/
+
+.quote-box{
+
+    margin:40px 0;
+
+    padding:30px;
+
+    background:#eff6ff;
+
+    border-left:6px solid #2563eb;
+
+    border-radius:14px;
+
+    font-size:22px;
+
+    font-style:italic;
+
+    color:#334155;
+
+}
+
+/*=========================
+WARNING BOX
+==========================*/
+
+.warning-box{
+
+    margin:40px 0;
+
+    padding:25px;
+
+    background:#fff7ed;
+
+    border-left:6px solid #f97316;
+
+    border-radius:14px;
+
+    color:#7c2d12;
+
+}
+/*=========================
+TABLE
+==========================*/
+
+.finance-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin:40px 0;
+
+}
+
+.finance-table th{
+
+    background:#2563eb;
+
+    color:#fff;
+
+    padding:16px;
+
+    text-align:left;
+
+}
+
+.finance-table td{
+
+    padding:16px;
+
+    border:1px solid #e5e7eb;
+
+}
+
+.finance-table tr:nth-child(even){
+
+    background:#f8fafc;
+
+}
+
+/*=========================
+IMAGE HOVER
+==========================*/
+
+.featured-image{
+
+overflow:hidden;
+
+border-radius:20px;
+
+}
+
+.featured-image img{
+
+transition:.4s;
+
+}
+
+.featured-image img:hover{
+
+transform:scale(1.03);
+
+}
+
