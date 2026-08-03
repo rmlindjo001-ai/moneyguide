@@ -25,13 +25,84 @@ window.addEventListener("scroll", () => {
     document.getElementById("readingBar").style.width = progress + "%";
 
 });
-const themeButton=document.getElementById("themeToggle");
+const backTop = document.getElementById("backTop");
 
-if(themeButton){
+window.addEventListener("scroll", () => {
 
-themeButton.addEventListener("click",()=>{
+    if(backTop){
 
-document.body.classList.toggle("dark");
+        backTop.style.display = window.scrollY > 400 ? "block" : "none";
+
+    }
+
+});
+
+if(backTop){
+
+    backTop.addEventListener("click", () => {
+
+        window.scrollTo({
+
+            top:0,
+
+            behavior:"smooth"
+
+        });
+
+    });
+
+}
+/*=========================
+SHARE BUTTONS
+==========================*/
+
+const pageUrl = encodeURIComponent(window.location.href);
+
+const pageTitle = encodeURIComponent(document.title);
+
+const facebook = document.getElementById("shareFacebook");
+const twitter = document.getElementById("shareTwitter");
+const linkedin = document.getElementById("shareLinkedin");
+const email = document.getElementById("shareEmail");
+
+if(facebook){
+
+facebook.href=`https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
+
+}
+
+if(twitter){
+
+twitter.href=`https://twitter.com/intent/tweet?url=${pageUrl}&text=${pageTitle}`;
+
+}
+
+if(linkedin){
+
+linkedin.href=`https://www.linkedin.com/sharing/share-offsite/?url=${pageUrl}`;
+
+}
+
+if(email){
+
+email.href=`mailto:?subject=${pageTitle}&body=${pageUrl}`;
+
+}
+/*=========================
+NEWSLETTER
+==========================*/
+
+const newsletter = document.querySelector(".newsletter-form");
+
+if(newsletter){
+
+newsletter.addEventListener("submit",(e)=>{
+
+e.preventDefault();
+
+alert("Thank you for subscribing to MoneyGuide!");
+
+newsletter.reset();
 
 });
 
