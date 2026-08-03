@@ -25,3 +25,14 @@ window.addEventListener("scroll", () => {
     document.getElementById("readingBar").style.width = progress + "%";
 
 });
+const themeButton=document.getElementById("themeToggle");
+
+if(themeButton){
+
+themeButton.addEventListener("click",()=>{
+
+document.body.classList.toggle("dark");
+
+});
+
+}
