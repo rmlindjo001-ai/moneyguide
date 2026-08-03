@@ -1,3 +1,9 @@
+html{
+
+scroll-behavior:smooth;
+
+}
+
 :root{
 
     --primary:#2563eb;
