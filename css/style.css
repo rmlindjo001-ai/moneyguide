@@ -1533,4 +1533,106 @@ transition:.4s;
 transform:scale(1.03);
 
 }
+/*=========================
+NEWSLETTER
+==========================*/
 
+.newsletter{
+
+padding:100px 0;
+
+background:#f8fafc;
+
+}
+
+.newsletter-box{
+
+max-width:850px;
+
+margin:auto;
+
+text-align:center;
+
+padding:60px;
+
+background:#2563eb;
+
+border-radius:24px;
+
+color:#fff;
+
+box-shadow:0 20px 40px rgba(37,99,235,.25);
+
+}
+
+.newsletter-box h2{
+
+font-size:42px;
+
+margin:20px 0;
+
+}
+
+.newsletter-box p{
+
+max-width:650px;
+
+margin:0 auto 35px;
+
+line-height:1.8;
+
+}
+
+.newsletter-form{
+
+display:flex;
+
+gap:15px;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+.newsletter-form input{
+
+flex:1;
+
+min-width:280px;
+
+padding:18px;
+
+border:none;
+
+border-radius:12px;
+
+font-size:16px;
+
+}
+
+.newsletter-form button{
+
+padding:18px 35px;
+
+border:none;
+
+border-radius:12px;
+
+background:#0f172a;
+
+color:#fff;
+
+font-weight:700;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.newsletter-form button:hover{
+
+transform:translateY(-2px);
+
+}
