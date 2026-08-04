@@ -107,3 +107,186 @@ newsletter.reset();
 });
 
 }
+//======================
+// SEARCH ARTICLES
+//======================
+
+const articles = [
+
+{
+title:"How to Save Money Every Month",
+url:"how-to-save-money.html",
+category:"Saving"
+},
+
+{
+title:"Personal Loan vs Credit Card",
+url:"personal-loan-vs-credit-card.html",
+category:"Loans"
+},
+
+{
+title:"Mortgage Guide",
+url:"mortgage-guide.html",
+category:"Loans"
+},
+
+{
+title:"How Auto Loans Work",
+url:"how-auto-loans-work.html",
+category:"Loans"
+},
+
+{
+title:"Investing for Beginners",
+url:"investing-for-beginners.html",
+category:"Investing"
+},
+
+{
+title:"What is an ETF",
+url:"what-is-an-etf.html",
+category:"Investing"
+},
+
+{
+title:"How Credit Cards Work",
+url:"how-credit-cards-work.html",
+category:"Credit Cards"
+},
+
+{
+title:"Improve Credit Score",
+url:"improve-credit-score.html",
+category:"Credit Cards"
+},
+
+{
+title:"50/30/20 Budget Rule",
+url:"50-30-20-budget-rule.html",
+category:"Budgeting"
+},
+
+{
+title:"How to Build an Emergency Fund",
+url:"how-to-build-an-emergency-fund.html",
+category:"Saving"
+},
+
+{
+title:"How to Choose the Right Bank Account",
+url:"how-to-choose-the-right-bank-account.html",
+category:"Banking"
+},
+
+{
+title:"Online Banking Safety Tips",
+url:"online-banking-safety-tips.html",
+category:"Banking"
+},
+
+{
+title:"Checking vs Savings Accounts",
+url:"checking-vs-savings-accounts.html",
+category:"Banking"
+},
+
+{
+title:"How to Avoid Bank Fees",
+url:"how-to-avoid-bank-fees.html",
+category:"Banking"
+},
+
+{
+title:"How to Create Your First Budget",
+url:"how-to-create-your-first-budget.html",
+category:"Budgeting"
+},
+
+{
+title:"Common Budgeting Mistakes",
+url:"common-budgeting-mistakes.html",
+category:"Budgeting"
+},
+
+{
+title:"Budgeting Tips for Families",
+url:"budgeting-tips-for-families.html",
+category:"Budgeting"
+}
+
+];
+
+const input=document.getElementById("searchInput");
+const btn=document.getElementById("searchBtn");
+const results=document.getElementById("searchResults");
+
+if(input){
+
+function searchArticle(){
+
+const keyword=input.value.toLowerCase().trim();
+
+results.innerHTML="";
+
+if(keyword===""){
+results.style.display="none";
+return;
+}
+
+const found=articles.filter(article=>
+
+article.title.toLowerCase().includes(keyword) ||
+
+article.category.toLowerCase().includes(keyword)
+
+);
+
+results.style.display="block";
+
+if(found.length===0){
+
+results.innerHTML=`
+
+<div class="no-result">
+
+No articles found.
+
+</div>
+
+`;
+
+return;
+
+}
+
+found.forEach(article=>{
+
+results.innerHTML+=`
+
+<div class="search-item">
+
+<h3>${article.title}</h3>
+
+<p>${article.category}</p>
+
+<a href="${article.url}">
+
+Read Article →
+
+</a>
+
+</div>
+
+`;
+
+});
+
+}
+
+btn.addEventListener("click",searchArticle);
+
+input.addEventListener("keyup",searchArticle);
+
+}
+
