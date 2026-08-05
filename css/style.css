@@ -2202,19 +2202,40 @@ SEARCH RESULTS
 
 }
 .logo img{
-    height:48px;
-    width:auto;
-    display:block;
+    height: 70px;
+    width: auto;
+    display: block;
 }
 
 .logo a{
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+    text-decoration: none;
+    
+.logo span{
+    font-size: 26px;
+    font-weight: 700;
+    color: #2563eb; /* Biru */
+    font-family: 'Poppins', sans-serif;
 }
+
+/* Tablet */
 @media (max-width:768px){
-
-.logo img{
-    height:40px;
+    .logo img{
+        height: 55px;
+    }
+     .logo span{
+        font-size:20px;
+    }
 }
 
+/* HP */
+@media (max-width:480px){
+    .logo img{
+        height: 45px;
+    }
+     .logo span{
+        font-size:16px;
+    }
 }
