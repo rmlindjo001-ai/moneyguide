@@ -51,28 +51,92 @@ grid-template-columns:repeat(2,1fr);
 }
 
 
-/*====================================
-MOBILE
-====================================*/
-
 @media (max-width:768px){
 
 .header{
 
-flex-direction:column;
+display:flex;
+justify-content:space-between;
+align-items:center;
 
-gap:20px;
+flex-direction:row;
+
+padding:15px 0;
+
+gap:0;
+
+position:relative;
+
+}
+
+.logo{
+
+width:auto;
+margin:0;
+
+}
+
+.logo img{
+
+height:42px;
+
+}
+
+.menu-toggle{
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+margin-left:auto;
+
+font-size:32px;
+
+cursor:pointer;
+
+}
+
+nav{
+
+position:absolute;
+
+top:100%;
+
+left:0;
+
+width:100%;
+
+background:#fff;
+
+display:none;
+
+padding:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+border-radius:0 0 15px 15px;
+
+}
+
+nav.active{
+
+display:block;
 
 }
 
 nav ul{
 
-flex-wrap:wrap;
+display:flex;
 
-justify-content:center;
+flex-direction:column;
+
+gap:15px;
+
+align-items:flex-start;
 
 }
 
+}
 .hero{
 
 padding:100px 0;
