@@ -2213,20 +2213,11 @@ SEARCH RESULTS
     gap: 5px; 
     text-decoration: none;
     
-.logo span{
-    font-size: 26px;
-    font-weight: 700;
-    color: #2563eb; /* Biru */
-    font-family: 'Poppins', sans-serif;
-}
 
 /* Tablet */
 @media (max-width:768px){
     .logo img{
         height: 55px;
-    }
-     .logo span{
-        font-size:20px;
     }
 }
 
@@ -2235,7 +2226,5 @@ SEARCH RESULTS
     .logo img{
         height: 45px;
     }
-     .logo span{
-        font-size:16px;
-    }
+
 }
