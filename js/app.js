@@ -290,11 +290,31 @@ input.addEventListener("keyup",searchArticle);
 
 }
 
-<script>
 const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('nav');
 
-menuToggle.addEventListener('click', function () {
+menuToggle.addEventListener('click', function (e) {
+    e.stopPropagation();
+
     nav.classList.toggle('active');
+
+    if (nav.classList.contains('active')) {
+        menuToggle.textContent = '✕';
+    } else {
+        menuToggle.textContent = '☰';
+    }
 });
-</script>
+
+// Klik di luar menu = tutup menu
+document.addEventListener('click', function (e) {
+
+    if (
+        nav.classList.contains('active') &&
+        !nav.contains(e.target) &&
+        !menuToggle.contains(e.target)
+    ) {
+        nav.classList.remove('active');
+        menuToggle.textContent = '☰';
+    }
+
+});
