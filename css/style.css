@@ -223,100 +223,93 @@ nav a:hover {
    HERO
 =========================== */
 
-.hero{
+.hero {
+    min-height: 500px;
 
-    min-height:100vh;
-
-    display:flex;
-
-    align-items:center;
+    display: flex;
+    align-items: center;
 
     background:
+        linear-gradient(rgba(15,23,42,.78),rgba(15,23,42,.78)),
+        url("https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1600&q=80");
 
-    linear-gradient(rgba(15,23,42,.78),rgba(15,23,42,.78)),
-
-    url("https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1600&q=80");
-
-    background-size:cover;
-
-    background-position:center;
-
+    background-size: cover;
+    background-position: center;
 }
 
-.hero-content{
-
-    color:#fff;
-
-    max-width:720px;
-
+.hero-content {
+    color: #fff;
+    max-width: 720px;
 }
 
-.hero-tag{
-
-    display:inline-block;
-
-    padding:8px 18px;
-
-    border-radius:50px;
-
-    background:#2563eb;
-
-    margin-bottom:25px;
-
-    font-size:14px;
-
-    font-weight:600;
-
+.hero-tag {
+    display: inline-block;
+    padding: 7px 16px;
+    border-radius: 50px;
+    background: #2563eb;
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-weight: 600;
 }
 
-.hero h1{
-
-    font-size:64px;
-
-    line-height:1.1;
-
-    margin-bottom:25px;
-
-    font-weight:800;
-
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    font-weight: 800;
 }
 
-.hero p{
-
-    font-size:20px;
-
-    line-height:1.8;
-
-    color:#dbe4ee;
-
-    margin-bottom:40px;
-
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #dbe4ee;
+    margin-bottom: 30px;
 }
 
-.btn{
-
-    display:inline-block;
-
-    background:#2563eb;
-
-    color:#fff;
-
-    padding:16px 36px;
-
-    border-radius:12px;
-
-    font-weight:700;
-
-    transition:.3s;
-
+.btn {
+    display: inline-block;
+    background: #2563eb;
+    color: #fff;
+    padding: 14px 30px;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: .3s;
 }
 
-.btn:hover{
+.btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-3px);
+}
 
-    background:#1d4ed8;
 
-    transform:translateY(-4px);
+/* ===========================
+   MOBILE
+=========================== */
 
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: 430px;
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .hero-tag {
+        font-size: 12px;
+        padding: 6px 14px;
+    }
+
+    .btn {
+        padding: 12px 24px;
+    }
 }
 
 /*============================
