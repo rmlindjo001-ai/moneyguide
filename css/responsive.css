@@ -55,14 +55,22 @@ grid-template-columns:repeat(2,1fr);
 MOBILE
 ====================================*/
 
-@media (max-width:768px){
+@media (max-width: 768px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-.header{
+    .logo {
+        margin: 0;
+    }
 
-flex-direction:column;
-
-gap:20px;
-
+    .menu-toggle {
+        margin-left: auto;
+        flex-shrink: 0;
+    }
 }
 
 nav ul{
