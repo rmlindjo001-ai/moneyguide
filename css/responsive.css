@@ -1,31 +1,215 @@
 /*====================================
-SMALL MOBILE
+TABLET
 ====================================*/
 
-@media (max-width:480px){
+@media (max-width:992px){
 
-    .container{
-        width:92%;
+.container{
+
+width:90%;
+
+}
+
+.hero h1{
+
+font-size:48px;
+
+}
+
+.feature-grid,
+.latest-grid,
+.category-grid,
+.stats-grid,
+.related-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.article-layout{
+
+grid-template-columns:1fr;
+
+}
+
+.sidebar{
+
+position:relative;
+
+top:0;
+
+margin-top:50px;
+
+}
+
+.footer-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+/*====================================
+MOBILE
+====================================*/
+
+@media (max-width:768px){
+
+.header{
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+nav ul{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+.hero{
+
+padding:100px 0;
+
+}
+
+.hero h1{
+
+font-size:36px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.feature-grid,
+.latest-grid,
+.category-grid,
+.stats-grid,
+.related-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.article-meta{
+
+flex-wrap:wrap;
+
+gap:10px;
+
+}
+
+.article-hero h1{
+
+font-size:34px;
+
+}
+
+.search-input{
+
+flex-direction:column;
+
+border-radius:16px;
+
+}
+
+.search-input input{
+
+width:100%;
+
+}
+
+.search-input button{
+
+width:100%;
+
+padding:18px;
+
+}
+
+.footer-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.author-box{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.article-nav{
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+.share-buttons{
+
+justify-content:center;
+
+}
+
+}
+
+/*=========================
+PAGE HERO
+=========================*/
+
+@media (max-width:768px){
+
+    .page-hero{
+
+        padding:110px 20px 70px;
+
     }
 
-    .hero h1{
-        font-size:30px;
+    .page-hero h1{
+
+        font-size:36px;
+
     }
 
-    .article-hero h1{
-        font-size:30px;
-        line-height:1.2;
-    }
+    .page-hero p{
 
-    .article-meta{
-        font-size:14px;
-    }
+        font-size:17px;
 
-    .article-svg,
-    .article-inline-image{
-        margin:30px auto;
     }
 
 }
 
+@media (max-width:992px){
+
+.category-layout{
+
+grid-template-columns:1fr;
+
+}
+
+.category-sidebar{
+
+position:relative;
+
+top:0;
+
+margin-top:40px;
+
+}
+
+}
 
