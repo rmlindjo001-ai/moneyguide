@@ -2,7 +2,7 @@
 TABLET
 ====================================*/
 
-@media (max-width:992px){
+@media (max-width:900px){
 
 .container{
 
@@ -22,7 +22,7 @@ font-size:48px;
 .stats-grid,
 .related-grid{
 
-    grid-template-columns:repeat(3,1fr);
+     grid-template-columns: repeat(2, 1fr);
 
 }
 
@@ -55,7 +55,7 @@ grid-template-columns:repeat(2,1fr);
 MOBILE
 ====================================*/
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .header {
         display: flex;
         flex-direction: row;
@@ -106,7 +106,7 @@ font-size:18px;
 .related-grid{
 
  grid-template-columns: 1fr;
-
+ gap: 15px;
 }
 
 .article-meta{
